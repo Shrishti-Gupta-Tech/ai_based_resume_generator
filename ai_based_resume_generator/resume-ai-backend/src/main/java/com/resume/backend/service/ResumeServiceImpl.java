@@ -1,7 +1,6 @@
 package com.resume.backend.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.json.JSONObject;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.core.io.ClassPathResource;
@@ -25,7 +24,7 @@ public class ResumeServiceImpl implements ResumeService {
     @Override
     public   Map<String, Object> generateResumeResponse(String userResumeDescription) throws IOException {
 
-        String promptString = this.loadPromptFromFile("resume_prompt.txt");
+        String promptString = this.loadPromptFromFile("resume_prompt");
         String promptContent = this.putValuesToTemplate(promptString, Map.of(
                 "userDescription", userResumeDescription
         ));
