@@ -1,4 +1,4 @@
-package com.resume.backend.resume_ai_backend;
+package com.resume.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

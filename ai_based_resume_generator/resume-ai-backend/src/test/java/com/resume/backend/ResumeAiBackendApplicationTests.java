@@ -1,4 +1,4 @@
-package com.resume.backend.resume_ai_backend;
+package com.resume.backend;
 
 import com.resume.backend.service.ResumeService;
 import org.junit.jupiter.api.Test;
