@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-repo/ai_based_resume_generator.git'
+                git branch: 'main', url: 'https://github.com/Shrishti-Gupta-Tech/ai_based_resume_generator.git'
             }
         }
 
